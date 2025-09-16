@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label {
+            display: block;
+            font-size: 30px;
+        }
+        input {
+            width: 300px;
+            height: 50px;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -17,12 +28,17 @@
         </nav>
     </header>
     <main class="main">
-        <p>Некий блок страницы</p>
         <button id="btnForEvent" onmouseleave="console.log('mouseleave')
         ">click me</button>
         <br>
         <br>
         <a id="linkGPT" href="https://chatgpt.org/chat">https://chatgpt.org/chat</a>
+        <br>
+        <br>
+        <label for="rub">RUB</label>
+        <input id="rub" type="number">
+        <label for="usd">USD</label>
+        <input id="usd" type="number">
     </main>
     <footer class="footer">
         <p>Контакты и еще что-нибудь</p>
