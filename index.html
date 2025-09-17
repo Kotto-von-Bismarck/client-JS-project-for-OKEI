@@ -14,6 +14,9 @@
             height: 50px;
             font-size: 30px;
         }
+        ._active {
+            background-color:brown;
+        }
     </style>
 </head>
 <body>
@@ -28,8 +31,8 @@
         </nav>
     </header>
     <main class="main">
-        <button id="btnForEvent" onmouseleave="console.log('mouseleave')
-        ">click me</button>
+        <button class="main__btn" id="btnForEvent" onmouseleave="console.log('mouseleave')
+        "><span>click me</span></button>
         <br>
         <br>
         <a id="linkGPT" href="https://chatgpt.org/chat">https://chatgpt.org/chat</a>
@@ -38,7 +41,7 @@
         <label for="rub">RUB</label>
         <input id="rub" type="number">
         <label for="usd">USD</label>
-        <input id="usd" type="number">
+        <input id="usd">
     </main>
     <footer class="footer">
         <p>Контакты и еще что-нибудь</p>

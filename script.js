@@ -616,7 +616,7 @@ const secondTestObj = {
 
 // Объект JSON и его методы:
 // I -- JSON.stringify(имя объекта) - позволяет преобразовать объект JS в формат JSON
-// I -- JSON.parse(имя объекта) - позволяет преобразовать объект JSON в объект JS
+// II -- JSON.parse(имя объекта) - позволяет преобразовать объект JSON в объект JS
 
 // Синтаксис:
 // {"key": "option"}
@@ -675,3 +675,15 @@ inputRub.addEventListener('input', () => {
 // События:
 // 'readystatechange' - сигнализирует о статусе готовности запроса в данный момент;
 // 'load' - сигнализирует о полной готовности запроса, но не об успешном его ваполнении;
+
+// SPREAD, REST
+const funcLog = function (a, b, ...rest) {
+    console.log(a,b);
+    rest.forEach(item => {
+        console.log(item);
+    })
+}
+funcLog('a','b','c','d','g')
+
+const newElement = document.createElement('LI');
+const newTextNode = document.createTextNode('some text');
